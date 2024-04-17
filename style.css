@@ -1,0 +1,272 @@
+/* Top bar */
+.top-bar {
+    font-family: 'Arial', sans-serif;
+    background-color: #333;
+    color: #fff;
+    padding: 30px 0;
+    border-bottom: 1px solid #d3d3d3; /* Light grey border */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-bar .logo {
+    margin-left: 80; /* Align the logo with the left edge of the viewport */
+    flex: 0 0 auto; /* Do not grow or shrink the logo area */
+}
+
+.top-bar .logo img {
+    height: 120px;
+}
+
+/* The container for login and register links */
+.login-register-container {
+    display: flex;
+    gap: 10px; /* Adjust gap as needed */
+    margin-right: auto; /* Push everything to the right */
+    padding-left: 100px; /* Space from the left side of the screen */
+}
+
+.top-bar a {
+    color: gold;
+    text-decoration: none;
+    padding: 8px 16px;
+}
+
+.top-bar a:hover {
+    background-color: #eed64f87;
+}
+
+/* Container for the search bar */
+.search-bar {
+    margin-right: 0; /* Align the search bar with the right edge */
+    display: flex;
+    justify-content: flex-end; /* Align search bar items to the right */
+    flex-grow: 1; /* Allow search bar to fill the available space if needed */
+}
+.top-bar .search-bar input[type="text"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-family: 'Arial', sans-serif;
+}
+
+.top-bar .search-bar button {
+    background-color: gold;
+    color: #333;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+
+.main-nav {
+    font-family: 'Arial', sans-serif;
+    background-color: #d3d3d3; /* Grey background */
+    display: flex;
+    justify-content: center; /* Center the navigation items */
+    align-items: center;
+}
+
+.main-nav ul {
+    font-family: 'Arial', sans-serif;
+    list-style-type: none;
+    display: flex;
+    padding: 15px 0;
+    margin: 0;
+    border-radius: 5px; /* Rounded corners for navigation border */
+}
+
+.main-nav ul li {
+    margin-right: 10px;
+}
+
+.main-nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 30px 40px;
+    transition: background-color 0.2s;
+    border-radius: 5px; /* Rounded corners for button effect */
+}
+
+.main-nav ul li a:hover {
+    background-color: #bbb; /* Slightly darker on hover for interaction */
+}
+
+.main-nav ul li:last-child a {
+    margin-right: 0; /* Remove margin for the last item */
+}
+
+
+/* Featured products section */
+.featured-products {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #fff;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+/* Adjustments for Featured Products section */
+.featured-products {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+}
+
+.featured-image {
+    position: relative;
+}
+
+.featured-image img {
+    width: 100vw; /* Take up the entire viewport width */
+    height: 100vh; /* Take up the entire viewport height */
+    object-fit: cover; /* Ensure the image covers the entire space */
+    object-position: center; /* Center the image */
+    display: block;
+}
+
+.featured-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    color: gold; /* Gold text color */
+    padding: 20px;
+    border-radius: 5px;
+}
+.container {
+    font-family: 'Arial', sans-serif;
+    width: 45%;
+    margin: auto;
+    text-align: center;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.product {
+    font-family: 'Arial', sans-serif;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.product-image {
+    width: 60%;
+    height: 200px; /* Adjust size as needed */
+}
+/* Login Form Styling */
+.login-form {
+    font-family: 'Arial', sans-serif;
+    background-color: #333; /* White background for the form */
+    padding: 40px;
+    border-radius: 8px; /* Rounded corners for the form */
+    max-width: 400px; /* Fixed width */
+    margin: 50px auto; /* Center the form */
+    text-align: left;
+}
+
+.login-form h2 {
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+.form-group input[type='text'],
+.form-group input[type='password'] {
+    width: calc(100% - 10px);
+    padding: 10px;
+    border: 1px solid #ddd; /* Lighter border for the inputs */
+    border-radius: 4px;
+    font-size: 16px; /* Larger font size for better readability */
+}
+
+.form-group .error {
+    color: #d9534f; /* Bootstrap's default error color */
+    font-size: 14px;
+}
+
+.button {
+    background-color: gold; /* Use a color that matches your theme */
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px; /* Match input text size */
+}
+
+.button:hover {
+    background-color: #f0ad4e; /* A slightly lighter gold on hover */
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+.form-group input[type='text'],
+.form-group input[type='password'],
+.form-group input[type='email'] {
+    width: calc(100% - 10px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.form-group .error {
+    color: #d9534f;
+    font-size: 14px;
+}
+
+.button {
+    background-color: gold;
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.button:hover {
+    background-color: #f0ad4e;
+}
+
+/* Additional styles for links */
+a {
+    color: gold;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
